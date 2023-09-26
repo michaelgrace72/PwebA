@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f9;
+            color: #394d59;
+        }
+
+        header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            color: #ecf0f1;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section__title {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section__content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .section__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section__item {
+            text-align: center;
+            padding: 10px;
+            background: white;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        .section__item img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .footer__copyright {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .section__item-title {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .section__item-options {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <title>Company Profile</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Coders' Place</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section__title">About Us</h2>
+            <p class="section__content">Coders' Place is a leading technology company specializing in software development and digital solutions. We strive to stay ahead in this fast-paced technological landscape, adapting and evolving to the ever-changing industry.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section__title">Our Services</h2>
+            <div class="section__list">
+                <div class="section__item">
+                    <img src="https://i.pinimg.com/564x/ba/74/40/ba744092fe6e7222d44a5e89cf483d6d.jpg" alt="Web Development Icon">
+                    <div class="section__item-title">Web Development</div>
+                    <div class="section__item-options">
+                        <span>Explore</span>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="section__item">
+                    <img src="https://i.pinimg.com/564x/0e/81/0a/0e810a93339a596f5118ee96311dcf32.jpg" alt="Graphic Design Icon">
+                    <div class="section__item-title">Graphic Design</div>
+                    <div class="section__item-options">
+                        <span>Explore</span>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="section__item">
+                    <img src="https://i.pinimg.com/564x/49/ca/25/49ca253336c587f5722ad33c3dec2e31.jpg" alt="Digital Marketing Icon">
+                    <div class="section__item-title">Digital Marketing</div>
+                    <div class="section__item-options">
+                        <span>Explore</span>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section__title">Contact Us</h2>
+            <p class="section__content">Email: <a href="mailto:codersplace@example.com">codersplace@example.com</a></p>
+            <p class="section__content">Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer__copyright">&copy; 2023 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
