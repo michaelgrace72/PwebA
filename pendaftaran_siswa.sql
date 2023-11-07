@@ -12,6 +12,5 @@ CREATE TABLE `calon_siswa` (
   `sekolah_asal` varchar(64) NOT NULL
 );
 
-
 INSERT INTO `calon_siswa` (`id`, `nama`, `alamat`, `jenis_kelamin`, `agama`, `sekolah_asal`) VALUES
-(1, 'Priscili Ayuliani', 'Jl. Mangga No. 3, Mataram', 'perempuan', 'Islam', 'SMPN 32 Ampenan');
+(12, 'Priscili Ayuliani', 'Jl. Mangga No. 3, Mataram', 'perempuan', 'Islam', 'SMPN 32 Ampenan');

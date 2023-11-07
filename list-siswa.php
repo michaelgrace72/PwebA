@@ -1,4 +1,11 @@
-<?php include("config.php"); ?>
+<?php
+require 'config.php';
+
+// Your SQL query
+$sql = "SELECT * FROM calon_siswa";
+$query = $db->query($sql); // Use the PDO connection ($db) for SQLite
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -32,10 +39,7 @@
     <tbody>
 
         <?php
-        $sql = "SELECT * FROM calon_siswa";
-        $query = odbc_exec($ODBCConnection, $sql);
-
-        while($siswa = mysqli_fetch_array($query)){
+        while($siswa = $query->fetch(PDO::FETCH_ASSOC)){
             echo "<tr>";
 
             echo "<td>".$siswa['id']."</td>";
@@ -57,7 +61,7 @@
     </tbody>
     </table>
 
-    <p>Total: <?php echo mysqli_num_rows($query) ?></p>
+    <p>Total: <?php echo $query->rowCount() ?></p>
 
     </body>
 </html>
